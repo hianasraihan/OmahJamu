@@ -4,7 +4,7 @@ import Image from "next/image";
 const testimonials = [
   {
     name: "Prilly Latuconsina",
-    image: "/pp1.jpg", // ganti sesuai path gambar kamu
+    image: "/pp1.jpg",
     stars: 5,
     text: "Burger premiumnya benar-benar istimewa, dagingnya juicy dan bumbunya pas. Sudah beberapa kali pesan disini dan selalu puas!",
   },
@@ -55,7 +55,9 @@ export default function Testimoni() {
                 </div>
               </div>
             </div>
-            <p className="text-gray-700 leading-relaxed">"{item.text}"</p>
+            <p className="text-gray-700 leading-relaxed">
+              &quot;{item.text}&quot;
+            </p>
           </div>
         ))}
       </div>
